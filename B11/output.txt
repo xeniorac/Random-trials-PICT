@@ -1,0 +1,78 @@
+OUTPUT:
+
+
+[pict@localhost ~]$ python vfs.py
+WELCOME TO PYTHON VIRTUAL FILE SYSTEM...
+FOR HELP ENTER 'help' command...
+.
+.
+pvfs>>>  help
+LIST OF COMMANDS
+_____________________________________
+mkdir: makes direcory (recursively)
+chdir: changes current working directory
+chroot: changes current root directory
+pwd: prints current working directory
+link: creates a link
+ls: displays contents of current directory
+stat: displays internal details and status of file
+catread: reads a file and displays its content
+rm: deletes a file
+rmdir: deletes a directory
+rename: renames a file
+cp: copies file
+catwrite: writes data in file
+.
+.
+pvfs>>>  mkdir
+ENTER DIRECTORY NAME: pict
+.
+.
+pvfs>>>  chdir
+ENTER DIRECTORY NAME: pict
+.
+.
+pvfs>>>  
+INVALID COMMAND PLEASE CHECK HELP...
+.
+.
+pvfs>>>  mkdir
+ENTER DIRECTORY NAME: pune
+.
+.
+
+pvfs>>>  catwrite
+ENTER FILENAME: trial.txt
+ENTER DATA IN FILE...
+
+Hello, we are now writing data in the file which is present in Virtual File System.
+.
+.
+pvfs>>>  ls
+pune
+trial.txt
+.
+.
+pvfs>>>  stat
+ENTER FILE/DIRECTORY NAME: pict
+FILE/DIRECTORY NOT FOUND
+.
+.
+pvfs>>>  stat
+ENTER FILE/DIRECTORY NAME: trial.txt
+DEV ID: 64770	INODE: 1456525
+PROTECTION: 33204	HARD LINKS: 1
+USER ID: 1000	GROUP ID: 1000
+SIZE: 84	BLOCK SIZE: 4096
+BLOCKS: 8
+.
+.
+pvfs>>>  rmdir
+ENTER DIRECTORY: pune
+.
+.
+pvfs>>>  ls
+trial.txt
+.
+.
+

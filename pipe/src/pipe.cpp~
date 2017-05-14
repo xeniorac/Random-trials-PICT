@@ -1,0 +1,30 @@
+//============================================================================
+// Name        : pipe.cpp
+// Author      : 3315
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<unistd.h>
+#include<stdio.h>
+using namespace std;
+class pipe
+{public:
+	int pid;
+ int fd[2];
+ void createprocess();
+ void readpro();
+
+
+
+};
+void pipe::createprocess()
+{
+	pid=fork();
+	if(pid==-1)
+		cout<<"error";
+	else if(pid==0)
+		cout<<"process "
+}

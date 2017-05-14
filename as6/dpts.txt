@@ -1,0 +1,6 @@
+0001	Management	10
+0002	Research	20
+0003	Finance	30
+0004	Non Staff	40
+0005	Attorneys	50
+0006	Technicians	60
